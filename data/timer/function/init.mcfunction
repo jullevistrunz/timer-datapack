@@ -19,6 +19,8 @@ execute unless score #timer timer_changeGamemode matches 0..1 run scoreboard pla
 
 execute unless score #timer timer_seconds1 matches 0..10 run function timer:reset
 
-execute unless data storage timer:settings display run data modify storage timer:settings display set value { "mainColor": "white", "accentColor": "red" }
+execute unless data storage timer:settings display.mainColor run data modify storage timer:settings display.mainColor set value "white"
+execute unless data storage timer:settings display.accentColor run data modify storage timer:settings display.accentColor set value "red"
+execute unless data storage timer:settings display.stoppedItalic run data modify storage timer:settings display.stoppedItalic set value "true"
 
 tellraw @a ["",{"text":"Timer: "},{"text":"Reset","color":"blue","clickEvent":{"action":"run_command","value":"/function timer:reset"}},{"text":" ","color":"blue"},{"text":"Resume","color":"green","clickEvent":{"action":"run_command","value":"/function timer:resume"}},{"text":" ","color":"green"},{"text":"Stop","color":"red","clickEvent":{"action":"run_command","value":"/function timer:stop"}}]
