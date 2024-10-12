@@ -27,11 +27,11 @@ If enabled, when stopping the timer, every player will go into spectator mode. W
 
 When enabled hours will reset at 24 and increment the day counter. If not hours will go up infinitely. Do not enable/disable after one day has passed.
 
-> ![image](https://github.com/user-attachments/assets/c7c09f29-cbbf-405c-987f-8a9f840747f0)
-> ![image](https://github.com/user-attachments/assets/3a741477-9013-42ae-af71-98b025e1764a)
-
 - Enable: `/scoreboard players set #timer timer_enableDays 1`
 - Disable: `/scoreboard players set #timer timer_enableDays 0`
+
+> ![image](https://github.com/user-attachments/assets/c7c09f29-cbbf-405c-987f-8a9f840747f0)
+> ![image](https://github.com/user-attachments/assets/3a741477-9013-42ae-af71-98b025e1764a)
 
 #### Change color
 
@@ -46,3 +46,11 @@ Make the text italic when the timer is stopped.
 
 - Enable: `/data modify storage timer:settings display.stoppedItalic set value "true"`
 - Disable: `/data modify storage timer:settings display.stoppedItalic set value "false""`
+
+#### Customizable stopped text
+
+Change the text that will appear when the timer is stopped: `/data modify storage timer:settings display.stoppedText set value "Custom text "`, default is `">> Timer stopped at "`
+
+> ![image](https://github.com/user-attachments/assets/4d486dc2-bda5-43d2-a076-3f0969b86a09)
+> ![image](https://github.com/user-attachments/assets/441811d7-fa52-431a-9c40-829a44165cad)
+
