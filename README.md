@@ -2,6 +2,11 @@
 
 A simple customizable timer datapack for singleplayer and multiplayer
 
+## Installation
+
+1. Download the latest version from https://github.com/jullevistrunz/timer-datapack/releases
+2. Drag the ZIP into `<world folder>/datapacks`
+
 ## Usage
 
 - Start/Resume: `/function timer:resume`
