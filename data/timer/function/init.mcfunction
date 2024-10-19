@@ -23,5 +23,6 @@ execute unless data storage timer:settings display.mainColor run data modify sto
 execute unless data storage timer:settings display.accentColor run data modify storage timer:settings display.accentColor set value "red"
 execute unless data storage timer:settings display.stoppedItalic run data modify storage timer:settings display.stoppedItalic set value "true"
 execute unless data storage timer:settings display.stoppedText run data modify storage timer:settings display.stoppedText set value ">> Timer stopped at "
+execute unless data storage timer:settings display.design run data modify storage timer:settings display.design set value "default"
 
 tellraw @a ["",{"text":"Timer: "},{"text":"Reset","color":"blue","clickEvent":{"action":"run_command","value":"/function timer:reset"}},{"text":" ","color":"blue"},{"text":"Resume","color":"green","clickEvent":{"action":"run_command","value":"/function timer:resume"}},{"text":" ","color":"green"},{"text":"Stop","color":"red","clickEvent":{"action":"run_command","value":"/function timer:stop"}}]
