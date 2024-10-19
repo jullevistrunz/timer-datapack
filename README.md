@@ -16,6 +16,20 @@ A simple customizable timer datapack for singleplayer and multiplayer
 
 ## Settings
 
+#### Change design
+
+There are three built-in designs available for you to choose. 
+
+- Change design: `/data modify storage timer:settings display.design set value "<design>"`
+- Available designs: `default`, `detailed` and `minimal`
+
+#### Change color
+
+You can change the main and accent color. Default for main is white and red for accent. Hex codes can be used, e.g. "#FF0000"
+
+- Change main color: `/data modify storage timer:settings display.mainColor set value "<color>"`
+- Change accent color: `/data modify storage timer:settings display.accentColor set value "<color>"`
+
 #### Change gamemode on timer resume/stop
 
 If enabled, when stopping the timer, every player will go into spectator mode. When the timer is resumed they'll change to survival.
@@ -32,13 +46,6 @@ When enabled hours will reset at 24 and increment the day counter. If not hours 
 
 > ![image](https://github.com/user-attachments/assets/c7c09f29-cbbf-405c-987f-8a9f840747f0)
 > ![image](https://github.com/user-attachments/assets/3a741477-9013-42ae-af71-98b025e1764a)
-
-#### Change color
-
-You can change the main and accent color. Default for main is white and red for accent. Hex codes can be used, e.g. "#FF0000"
-
-- Change main color: `/data modify storage timer:settings display.mainColor set value "<color>"`
-- Change accent color: `/data modify storage timer:settings display.accentColor set value "<color>"`
 
 #### Italic text when stopped
 
