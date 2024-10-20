@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer Design Creator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <style id="styleForColors"></style>
+    <div class="inputContainer">
+      <input type="number" min="0" placeholder="Days" />
+      <input type="number" min="0" max="23" placeholder="Hours" />
+      <input type="number" min="0" max="59" placeholder="Minutes" />
+      <input type="number" min="0" max="59" placeholder="Seconds" />
+      <input
+        id="stoppedText"
+        type="text"
+        placeholder="Stopped Text"
+        value=">> Timer stopped at "
+      />
+      <div style="display: inline; text-wrap: nowrap">
+        <label for="mainColorInp">Main Color</label>
+        <input
+          type="color"
+          name="mainColor"
+          id="mainColorInp"
+          value="#ffffff"
+        />
+      </div>
+      <div style="display: inline; text-wrap: nowrap">
+        <label for="accentColorInp">Accent Color</label>
+        <input
+          type="color"
+          name="accentColor"
+          id="accentColorInp"
+          value="#ff5555"
+        />
+      </div>
+      <button onclick="updatePreviews()">Preview</button>
+    </div>
+    <div class="inputBoxTitle">Timer Running | Days Enabled</div>
+    <div class="inputBox timerRunning daysEnabled">
+      <input type="text" value="{d} | {h}:{m}:{s}" />
+      <div class="preview"></div>
+    </div>
+    <div class="inputBoxTitle">Timer Stopped | Days Enabled</div>
+    <div class="inputBox timerStopped daysEnabled">
+      <input type="text" value="{stoppedText}{d} | {h}:{m}:{s}" />
+      <div class="preview"></div>
+    </div>
+    <div class="inputBoxTitle">Timer Running | Days Disabled</div>
+    <div class="inputBox timerRunning daysDisabled">
+      <input type="text" value="{h}:{m}:{s}" />
+      <div class="preview"></div>
+    </div>
+    <div class="inputBoxTitle">Timer Stopped | Days Disabled</div>
+    <div class="inputBox timerStopped daysDisabled">
+      <input type="text" value="{stoppedText}{h}:{m}:{s}" />
+      <div class="preview"></div>
+    </div>
+    <br />
+    <div class="inputContainer">
+      <input id="designNameInp" type="text" placeholder="design-name" />
+      <button onclick="exportDesign()">Export</button>
+    </div>
+    <br />
+    <div class="inputContainer">
+      <label for="enabledDesignOutput">Enable design: </label><br />
+      <input
+        class="commandInp"
+        onclick="this.select(); document.execCommand('copy')"
+        type="text"
+        id="enabledDesignOutput"
+        readonly
+        value='/data modify storage timer:settings display.design set value "custom-design"'
+      />
+      <br />
+      <label for="setMainColorOutput">Set main color: </label><br />
+      <input
+        class="commandInp"
+        onclick="this.select(); document.execCommand('copy')"
+        type="text"
+        id="setMainColorOutput"
+        readonly
+        value='/data modify storage timer:settings display.mainColor set value "#ffffff"'
+      />
+      <br />
+      <label for="setAccentColorOutput">Set accent color: </label><br />
+      <input
+        class="commandInp"
+        onclick="this.select(); document.execCommand('copy')"
+        type="text"
+        id="setAccentColorOutput"
+        readonly
+        value='/data modify storage timer:settings display.accentColor set value "#ff5555"'
+      />
+      <br />
+      <label for="setStoppedTextOutput">Set stopped text: </label><br />
+      <input
+        class="commandInp"
+        onclick="this.select(); document.execCommand('copy')"
+        type="text"
+        id="setStoppedTextOutput"
+        readonly
+        value='/data modify storage timer:settings display.stoppedText set value ">> Timer stopped at "'
+      />
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
