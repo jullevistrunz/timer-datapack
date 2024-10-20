@@ -18,7 +18,7 @@ A simple customizable timer datapack for singleplayer and multiplayer
 
 #### Change design
 
-There are three built-in designs available for you to choose. 
+There are three built-in designs available for you to choose. To create your own read [the Design Creator guide](#design-creator)
 
 - Change design: `/data modify storage timer:settings display.design set value "<design>"`
 
@@ -64,3 +64,12 @@ Change the text that will appear when the timer is stopped: `/data modify storag
 
 > ![image](https://github.com/user-attachments/assets/278b1e59-24f4-4542-bd81-b7fde1b4f81c)
 > ![image](https://github.com/user-attachments/assets/321bc0e7-8488-4f50-9e13-0ae97b6c632b)
+
+## Design Creator
+
+1. Go to https://jullevistrunz.github.io/timer-datapack/
+2. At the top you can edit the preview time and your [settings](#settings). You'll set them in-game at the end of this tutorial. ![image](https://github.com/user-attachments/assets/fe32da41-621b-46f1-9474-239acea6234d)
+3. There are 4 states a design can be in. You can edit each individually. `{d}` is the placeholder for the elapsed days, `{h}` for hours and so on. `{stoppedText}` is the placeholder for the text defined [here](#customizable-stopped-text). When your happy with your creation click "Preview". ![image](https://github.com/user-attachments/assets/71b01c99-09d0-44e9-9567-adc07fe5482a)
+4. Now choose a name for your design. Note that upper-case letters will be lower-cased and spaces will be removed. ![image](https://github.com/user-attachments/assets/95d29b65-5b82-404c-9101-c862b0fe4be7)
+5. Click "Export". Save the file. Now move it to: `<world folder>/datapacks/timer-datapack/data/timer/function/design`. You might have to extract the your timer datapck beforehand, if you haven't already.
+6. Once in game run these commands, to enable your design, set your custom colors and the custom stopped text. ![image](https://github.com/user-attachments/assets/4c1b8a3d-b8e3-47ab-a2ba-1b15cbced66e)
