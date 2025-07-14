@@ -12,6 +12,8 @@ scoreboard objectives remove timer_dayAdd
 scoreboard objectives remove timer_enableDays
 scoreboard objectives remove timer_changeGamemode
 
+scoreboard objectives remove hideTimer
+
 data remove storage timer:settings display
 
 title @a actionbar ""

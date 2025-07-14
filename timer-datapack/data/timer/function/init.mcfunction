@@ -12,6 +12,8 @@ scoreboard objectives add timer_stop dummy
 scoreboard objectives add timer_enableDays dummy
 scoreboard objectives add timer_changeGamemode dummy
 
+scoreboard objectives add hideTimer trigger
+
 scoreboard players set #timer timer_tick 0
 
 execute unless score #timer timer_enableDays matches 0..1 run scoreboard players set #timer timer_enableDays 1
