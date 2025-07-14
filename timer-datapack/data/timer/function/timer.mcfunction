@@ -1,4 +1,4 @@
-scoreboard players add #timer timer_tick 1
+execute if entity @a run scoreboard players add #timer timer_tick 1
 
 execute if score #timer timer_tick matches 20.. run scoreboard players add #timer timer_seconds1 1
 execute if score #timer timer_tick matches 20.. run scoreboard players set #timer timer_tick 0
