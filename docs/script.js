@@ -115,7 +115,7 @@ function exportDesign() {
         timerStopped ? 1 : 0
       } if score #timer timer_enableDays matches ${
         daysEnabled ? 1 : 0
-      } run title @a actionbar [${tempArr.join(',')}]`
+      } run title @s actionbar [${tempArr.join(',')}]`
     )
   }
 
