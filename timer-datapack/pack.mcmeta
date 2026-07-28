@@ -1,6 +1,9 @@
 {
   "pack": {
-    "pack_format": 81,
+    "min_format": 81,
+    "max_format": 101,
+    "pack_format": 101,
+    "supported_formats": [81, 101],
     "description": "A simple customizable timer datapack for singleplayer and multiplayer"
   }
 }
